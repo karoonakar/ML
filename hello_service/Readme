@@ -1,0 +1,19 @@
+set path to 
+C:\DevTools\Anaconda3\Scripts
+C:\DevTools\Anaconda3
+
+pip install msgpack
+pip install virtualenv
+pip install flask
+pip install gunicorn
+pip install dill
+pip install scikit-learn
+pip install falcon
+
+
+mkdir hello_service
+virtualenv venv
+
+activate
+
+python app.py
