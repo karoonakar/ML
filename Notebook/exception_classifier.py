@@ -40,7 +40,7 @@ dtClassifier = tree.DecisionTreeClassifier()
 dtClassifier.fit(df3, df_lable)
 
 #Testing
-exception_df = pd.DataFrame({'Module':[11],'Language':[100],'Exception':[10019],'CausedBy1' : [0],'CausedBy2' : [0],'Message' : ['could not execute native bulk manipulation query at com.sgcib.mrploader'], 'CausedBy1Msg' : ['NoCausedBy oneMsg'], 'CausedBy2Msg' : ['NoCausedBy twoMsg']})
+exception_df = pd.DataFrame({'Module':[11],'Language':[100],'Exception':[10019],'CausedBy1' : [0],'CausedBy2' : [0],'Message' : ['could not execute native bulk manipulation query at'], 'CausedBy1Msg' : ['NoCausedBy oneMsg'], 'CausedBy2Msg' : ['NoCausedBy twoMsg']})
 df_master_test=exception_df[["Module", "Language","Exception","CausedBy1","CausedBy2"]]
 df_message_test=exception_df[["Message"]]
 df_causedBy1Msg_test=exception_df[["CausedBy1Msg"]]
